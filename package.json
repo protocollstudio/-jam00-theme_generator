@@ -1,0 +1,22 @@
+{
+  "name": "jam00",
+  "version": "0.0.1",
+  "description": "theme generator",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protocollstudio/jam00.git"
+  },
+  "author": "protocoll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/protocollstudio/jam00/issues"
+  },
+  "homepage": "https://github.com/protocollstudio/jam00#readme",
+  "devDependencies": {
+    "http-server": "0.9.0"
+  }
+}
