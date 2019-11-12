@@ -1,7 +1,7 @@
 export {
-    returnPouet
+    newTheme
 };
 
-function returnPouet() {
+function newTheme() {
     return "pouet";
 }
