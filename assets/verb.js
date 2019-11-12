@@ -1,4 +1,8 @@
-export let verb = [
+export {
+    verb
+}
+
+let verb = [
     "abscond",
     "accelerate",
     "adapt",
@@ -188,4 +192,4 @@ export let verb = [
     "wish",
     "wreck",
     "yell"
-];
+]

@@ -1,7 +1,9 @@
+import { verb } from "../assets/verb.js"
+
 export {
     newTheme
 };
 
 function newTheme() {
-    return "pouet";
+    return verb[2];
 }

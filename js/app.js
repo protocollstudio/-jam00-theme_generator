@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', function () {
     changeTheme();
 })
 
-
 function changeTheme() {
     let themeContainer = document.getElementById("theme-container")
     let paragraph = document.createElement('p')
