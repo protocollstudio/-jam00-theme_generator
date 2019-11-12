@@ -4,13 +4,13 @@ window.addEventListener('DOMContentLoaded', function () {
     changeTheme()
 })
 
-function changeTheme() {
+async function changeTheme() {
     
-    generator.newTheme().then((theme) => {
-        let themeContainer = document.getElementById("theme-container")
-        let paragraph = document.createElement('p')
-        paragraph.innerHTML =  `<h2> ${theme.verb} ${theme.adjective} ${theme.noun} </h2>`
-        themeContainer.appendChild(paragraph)
-    })
+    let themeContainer = document.getElementById("theme-container")
+    let paragraph = document.createElement('p')
+    let theme = await generator.newTheme()
+    
+    paragraph.innerHTML =  `<h2> ${theme.verb} ${theme.adjective} ${theme.noun} </h2>`
+    themeContainer.appendChild(paragraph)
 
 }

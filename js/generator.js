@@ -12,16 +12,18 @@ function loadRandomWord(listPath) {
         })
 }
 
-function newTheme() {
-    return Promise.all([loadRandomWord(config.Path.VERB), loadRandomWord(config.Path.NOUN), loadRandomWord(config.Path.ADJECTIVE)])
-        .then((([randomVerb, randomNoun, randomAdjective]) => {
-            return {
-                "verb" : randomVerb,
-                "noun" : randomNoun,
-                "adjective" : randomAdjective,
-            }
-        }))
+async function newTheme() {
+    let [randomVerb, randomNoun, randomAdjective] = await Promise.all([loadRandomWord(config.Path.VERB), 
+                                                                       loadRandomWord(config.Path.NOUN), 
+                                                                       loadRandomWord(config.Path.ADJECTIVE)])
         .catch((error) => {
             console.log(error)
+            return
         })
+
+    return {
+        "verb" : randomVerb,
+        "noun" : randomNoun,
+        "adjective" : randomAdjective,
+    }
 }
