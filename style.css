@@ -41,7 +41,6 @@ color : white;
 a {
     background:white;
     color:black;
-    padding: 2px 5px 2px 5px;
     text-decoration: none;
     transition: all ease-in 0.2s;
 }
@@ -49,6 +48,7 @@ a {
 a:hover {
     background: black;
     color: white;
+    padding: 2px 5px 2px 5px;
     transition: all ease-in 0.2s;
 }
 
@@ -98,6 +98,7 @@ svg {
 footer {
     position: absolute;
     bottom: 15px;
+    color: black;
 }
 
 #generate-button {
@@ -110,11 +111,9 @@ footer {
   
 .hide {
     opacity: 0;
-    transition:opacity 300ms;
-
+    transition: all ease-in 0.3s;
 }
 .visible {
     opacity: 1;
-    transition:opacity 300ms;
-
+    transition: all ease-in 0.3s;
 }
