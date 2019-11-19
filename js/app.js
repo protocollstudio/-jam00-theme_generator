@@ -1,14 +1,16 @@
 import * as generator from "./generator.js"
 
 window.addEventListener('DOMContentLoaded', function () {
-    changeTheme();
+    changeTheme()
 })
 
-function changeTheme() {
+async function changeTheme() {
+    
     let themeContainer = document.getElementById("theme-container")
     let paragraph = document.createElement('p')
-
-    let theme = generator.newTheme()
-    paragraph.innerHTML = theme
+    let theme = await generator.newTheme()
+    
+    paragraph.innerHTML =  `<h2> ${theme.verb} ${theme.adjective} ${theme.noun} </h2>`
     themeContainer.appendChild(paragraph)
+
 }
