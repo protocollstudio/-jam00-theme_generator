@@ -99,3 +99,7 @@ footer {
     position: absolute;
     bottom: 15px;
 }
+
+#generate-button {
+    z-index:10;
+}
