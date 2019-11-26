@@ -1,0 +1,26 @@
+.mobile {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .desktop {
+        display:none;
+    }
+    .mobile {
+        display: block;
+        bottom: -180px;
+    }
+    ul li {
+        font-size: 8vh;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .desktop {
+        display:block;
+    }
+    .mobile {
+        display: none;
+    }
+
+}
