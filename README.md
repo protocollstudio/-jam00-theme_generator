@@ -1,6 +1,8 @@
 # jam00
 Project theme generator
 
+![Capture](assets/images/capture.png)
+
 ## The Idea
 
 what will you be working on today ? 
