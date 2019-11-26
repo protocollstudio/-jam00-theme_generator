@@ -1,7 +1,3 @@
-export {
-    loadFile,
-    Path
-}
 
 const Path = {
     VERB : "assets/verbs_list.txt",
@@ -22,4 +18,9 @@ function loadFile(listPath) {
         xhr.open("GET", listPath, true)
         xhr.send()
     })
+}
+
+export {
+    loadFile,
+    Path
 }

@@ -1,9 +1,5 @@
 import * as config from "./configuration.js";
 
-export { 
-  newTheme
-};
-
 function loadRandomWord(listPath) {
   return config.loadFile(listPath).then(wordList => {
     let index = Math.round(Math.random() * (wordList.length - 1));
@@ -27,3 +23,7 @@ async function newTheme() {
     adjective: randomAdjective
   };
 }
+
+export { 
+  newTheme
+};
