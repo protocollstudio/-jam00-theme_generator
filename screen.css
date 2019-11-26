@@ -8,6 +8,10 @@
     }
     .mobile {
         display: block;
+        bottom: -180px;
+    }
+    ul li {
+        font-size: 8vh;
     }
 }
 
@@ -18,4 +22,5 @@
     .mobile {
         display: none;
     }
+
 }
