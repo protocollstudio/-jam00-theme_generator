@@ -1,4 +1,4 @@
-# jam00
+# [jam00] theme_generator
 Project theme generator
 
 ![Capture](assets/images/capture.png)
