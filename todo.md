@@ -5,6 +5,7 @@
  - [ ] automatic deployment
  - [ ] update words list.
  - [ ] info of why/how to use theme generator
+ - [ ] gérer un historique de theme pour une session (pour éviter les doublons et pouvoir retrouver un thème)
  - [x] ~publish on protocoll.network~
  - [x] ~responsive design~
  - [x] ~theme generation~
